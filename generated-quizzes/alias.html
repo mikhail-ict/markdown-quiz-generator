@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        code, pre {
+            font-family: monospace;
+        }
+        h1 code,
+        h2 code,
+        h3 code,
+        h4 code,
+        h5 code,
+        h6 code {
+            font-size: inherit;
+        }
+        ul li {
+            list-style-type: none;
+        }
+        table {
+        @extend .table;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-row">
+        <div class="container">
+            <h1>Bash Quiz: Aliases, Functions and Scripts</h1>
+<hr>
+<ol>
+<li>
+<p>What is an alias in the context of bash?</p>
+<ul class="checklist">
+<li><label><input type="checkbox" data-question="0" data-content="1" /> A shortcut for a command or a series of commands</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> A program or script that you can execute</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> A function without any body or logic</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> A type of file permission</label></li>
+</ul>
+</li>
+<li>
+<p>Which of the following commands will create an alias named <code>l</code> to list files in long format?</p>
+<ul class="checklist">
+<li><label><input type="checkbox" data-question="1" data-content="0" /> <code>function l { ls -l; }</code></label></li>
+<li><label><input type="checkbox" data-question="0" data-content="1" /> <code>alias l='ls -l'</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> <code>l() { 'ls -l'; }</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> <code>set alias l 'ls -l'</code></label></li>
+</ul>
+</li>
+<li>
+<p>How can you define a function named <code>myfunction</code> using the <code>function</code> keyword in bash?</p>
+<ul class="checklist">
+<li><label><input type="checkbox" data-question="0" data-content="1" /> <code>function myfunction { echo "Hello from myfunction!"; }</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> <code>alias myfunction { echo "Hello from myfunction!"; }</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> <code>alias myfunction='echo "Hello from myfunction!"'</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> <code>myfunction { 'echo "Hello from myfunction!"'; }</code></label></li>
+</ul>
+</li>
+<li>
+<p>How can you pass multiple arguments to a function or script in bash?</p>
+<ul class="checklist">
+<li><label><input type="checkbox" data-question="0" data-content="1" /> Using <code>$1</code>, <code>$2</code>, <code>$3</code>, etc.</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Using <code>%1 %2 %3…</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Using <code>${1:2:3}</code></label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Using <code>&amp;1 &amp;2 &amp;3...</code></label></li>
+</ul>
+</li>
+<li>
+<p>If you wanted to pass arguments to a bash script, which special variable would you use to access the first argument?</p>
+<ul class="textbox">
+<li><input type="text" data-content="1$" data-question="1s$s" placeholder="Enter the correct answer." class="form-control" />
+</ul>
+</li>
+<li>
+<p>In bash, what does a function allow you to do?</p>
+<ul class="checklist">
+<li><label><input type="checkbox" data-question="0" data-content="1" /> Group commands for later execution using a single name for the group</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Rename commands with a different name</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Change file permissions of multiple files at once</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Execute a command as the root user</label></li>
+</ul>
+</li>
+<li>
+<p>What is the primary difference between an alias and a function in bash?</p>
+<ul class="checklist">
+<li><label><input type="checkbox" data-question="0" data-content="1" /> A function can execute multiple lines of code, while an alias maps to a specific command.</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Aliases can accept parameters, but functions cannot.</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Functions can be made persistent across sessions, but aliases cannot.</label></li>
+<li><label><input type="checkbox" data-question="1" data-content="0" /> Aliases are scripts, whereas functions are built-in commands.</label></li>
+</ul>
+</li>
+<li>
+<p>When creating a bash script, what file extension is commonly used (your answer should start with <code>.</code>)?</p>
+<ul class="textbox">
+<li><input type="text" data-content="hs." data-question="hsss.s" placeholder="Enter the correct answer." class="form-control" />
+</ul>
+</li>
+<li>
+<p>If you wanted to make an alias persistent across sessions, where should you ideally place it (your answer should start with <code>~/.</code>)?</p>
+<ul class="textbox">
+<li><input type="text" data-content="crhsab./~" data-question="csrshsssasbs.s/s~s" placeholder="Enter the correct answer." class="form-control" />
+</ul>
+</li>
+<li>
+<p>What command in bash is typically used to print messages to the terminal?</p>
+<ul class="textbox">
+<li><input type="text" data-content="ohce" data-question="oshscses" placeholder="Enter the correct answer." class="form-control" />
+</ul>
+</li>
+</ol>
+        </div>
+    </div>
+    <div id="tg-msg" class="alert" role="alert" style="display: none">
+        <span id="tg-correct-questions"></span> Correct! <br /><b>Rating: <span id="tg-score"></span>%</b>
+    </div>
+    <div class="row">
+        <button id="check-questions" class="btn btn-lg btn-success">Check</button>
+        <button id="reset-questions" class="btn btn-link">Reset All</button>
+    </div>
+    <script type="text/javascript">$(function(){
+    $('ul.radio-list,ul.checklist,ul.textbox').each(function(i, el){
+        var questionClass = $(this).attr('class');
+        $(this).parent().addClass('question-row').addClass(questionClass);
+        if (questionClass=='radio-list') {
+            $(this).find('input[type="radio"]').attr('name', 'radio-question-' + i);
+        }
+    });
+
+    function checkQuestion() {
+        resetQuestions(true);
+        var questions = $('li.question-row');
+        var total_questions = questions.length;
+        var correct = 0;
+
+        questions.each(function(i, el) {
+            var self = $(this);
+            // Single Question.
+            if (self.hasClass('radio-list')) {
+                if (self.find('input[type="radio"][data-content="1"]:checked').length == 1) {
+                    correct += 1;
+                } else {
+                    self.addClass('text-danger');
+                }
+            }
+            // Textbox Question.
+            if(self.hasClass('textbox')) {
+                var textbox = self.find('input[type="text"]');
+                var correct_text = String(textbox.data("content")).trim().split("").reverse().join("");
+                if(String(textbox.val()).trim().toLowerCase()==correct_text.toLowerCase()) {
+                    correct += 1;
+                } else {
+                    self.addClass('text-danger');
+                    textbox.parent().find("i.text-correct").html(correct_text);
+                }
+            }
+            // Multiple selection Questions.
+            if(self.hasClass('checklist')) {
+                var total_corrects = self.find('input[type="checkbox"][data-content="1"]').length;
+                var total_incorrects = self.find('input[type="checkbox"][data-content="0"]').length;
+                var correct_selected = self.find('input[type="checkbox"][data-content="1"]:checked').length;
+                var incorrect_selected = self.find('input[type="checkbox"][data-content="0"]:checked').length;
+                var qc = +((correct_selected / total_corrects) - (incorrect_selected/total_incorrects)).toFixed(2);
+                if (qc < 0) {
+                    qc = 0;
+                }
+                correct += qc;
+                if (qc == 0) {
+                    self.addClass('text-danger');
+                } else if (qc > 0 && qc < 1) {
+                    self.addClass('text-warning');
+                }
+            }
+        });
+
+        showScore(correct, total_questions);
+    }
+
+    function showScore(correct, total) {
+        var score = (correct / total).toFixed(2) * 100;
+        var msgClass = 'alert-danger';
+        if (score >= 70) {
+            msgClass = 'alert-success';
+        } else if (score >= 50) {
+            msgClass = 'alert-warning';
+        }
+        $('#tg-correct-questions').text(correct + ' out of ' + total);
+        $('#tg-score').text(score);
+        $('#tg-msg').addClass(msgClass).show();
+    }
+    function resetQuestions(keep) {
+        $('li.question-row').removeClass('text-danger').removeClass('text-warning');
+        $('i.text-correct').html('');
+        $('#tg-msg').removeClass('alert-danger').removeClass('alert-success').removeClass('alert-warning').hide();
+        if(keep === true) {
+            return;
+        }
+        $('li.question-row').find('input[type="text"]').val('');
+        $('li.question-row').find('input[type="radio"],input[type="checkbox"]').prop('checked', false);
+    }
+    $('#check-questions').on('click', checkQuestion);
+    $('#reset-questions').on('click', resetQuestions);
+
+});</script>
+</div>
+</body>
+</html>
